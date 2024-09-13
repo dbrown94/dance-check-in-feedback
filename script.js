@@ -1,5 +1,5 @@
 // Google Apps Script web app URL (replace with your actual URL)
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/YOUR_WEB_APP_URL/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/dbrown94.github.io/dance-check-in-feedback/exec";
 
 
 document.getElementById('checkinForm').addEventListener('submit', function(event) {
@@ -19,7 +19,7 @@ document.getElementById('checkinForm').addEventListener('submit', function(event
     };
 
     // Send data to Google Sheets
-    fetch(GOOGLE_SCRIPT_URL, {
+    fetch(https://script.google.com/macros/s/AKfycbyB92ODHUYreBkjQ-zrpsWvAtIJ4iBkH8uDuDOIAN0ZYVtuv-cp95DQJxp0hBvEJhRM/exec, {
         method: 'POST',
         body: JSON.stringify(formData)
     }).then(response => response.text())
