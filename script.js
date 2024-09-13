@@ -19,7 +19,7 @@ document.getElementById('checkinForm').addEventListener('submit', function(event
     };
 
    
-    fetch(https://script.google.com/macros/s/AKfycbyB92ODHUYreBkjQ-zrpsWvAtIJ4iBkH8uDuDOIAN0ZYVtuv-cp95DQJxp0hBvEJhRM/exec, {
+    fetch('https://script.google.com/macros/s/AKfycbyB92ODHUYreBkjQ-zrpsWvAtIJ4iBkH8uDuDOIAN0ZYVtuv-cp95DQJxp0hBvEJhRM/exec', {
         method: 'POST',
         body: JSON.stringify(formData)
     }).then(response => response.text())
