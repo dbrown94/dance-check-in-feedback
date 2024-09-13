@@ -1,4 +1,4 @@
-// Google Apps Script web app URL (replace with your actual URL)
+
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/dbrown94.github.io/dance-check-in-feedback/exec";
 
 
@@ -18,7 +18,7 @@ document.getElementById('checkinForm').addEventListener('submit', function(event
         comments: ''
     };
 
-    // Send data to Google Sheets
+   
     fetch(https://script.google.com/macros/s/AKfycbyB92ODHUYreBkjQ-zrpsWvAtIJ4iBkH8uDuDOIAN0ZYVtuv-cp95DQJxp0hBvEJhRM/exec, {
         method: 'POST',
         body: JSON.stringify(formData)
@@ -29,15 +29,13 @@ document.getElementById('checkinForm').addEventListener('submit', function(event
       }).catch(error => console.error('Error!', error.message));
 });
 
-// Handling the feedback form
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get feedback data
+    
     const rating = document.getElementById('sessionRating').value;
     const comments = document.getElementById('comments').value;
 
-    // Create data object to send
     const formData = {
         name: '',  // Keep empty since feedback is anonymous
         sessionType: '',
@@ -46,7 +44,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         comments: comments
     };
 
-    // Send data to Google Sheets
+    
     fetch("https://script.google.com/macros/s/ttps://dbrown94.github.io/dance-check-in-feedback//exec", {
         method: 'POST',
         body: JSON.stringify(formData)
