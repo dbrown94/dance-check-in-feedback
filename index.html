@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVE Inclusive volunteer Check-In</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MOVE Inclusive volunteer Check-In</h1>
+
+        <div class="checkin-form">
+            <h2>Check-In for Session</h2>
+            <form id="checkinForm">
+                <label for="participantName">Participant Name:</label>
+                <input type="text" id="participantName" name="participantName" placeholder="Enter name" required>
+
+                <label for="sessionType">Session Type:</label>
+                <select id="sessionType" name="sessionType" required>
+                    <option value="group">Group Session</option>
+                    <option value="private">Private Session</option>
+                </select>
+
+                <label for="mood">Mood Before Session:</label>
+                <select id="mood" name="mood" required>
+                    <option value="happy">Happy 😊</option>
+                    <option value="excited">Excited 🤩</option>
+                    <option value="nervous">Nervous 😬</option>
+                    <option value="tired">Tired 😴</option>
+                </select>
+
+                <button type="submit">Check In</button>
+            </form>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>Post-Session Feedback</h2>
+            <form id="feedbackForm">
+                <label for="sessionRating">Rate the Session:</label>
+                <select id="sessionRating" name="sessionRating" required>
+                    <option value="1">1 - Not Good 😕</option>
+                    <option value="2">2 - Okay 😐</option>
+                    <option value="3">3 - Good 😊</option>
+                    <option value="4">4 - Great 😄</option>
+                    <option value="5">5 - Excellent 🤩</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="How was the session?" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        
+        <div class="display">
+            <h2>Recent Check-Ins & Feedback</h2>
+            <ul id="displayList"></ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
