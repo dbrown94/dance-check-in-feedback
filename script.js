@@ -47,7 +47,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     };
 
     // Send data to Google Sheets
-    fetch(GOOGLE_SCRIPT_URL, {
+    fetch("https://script.google.com/macros/s/ttps://dbrown94.github.io/dance-check-in-feedback//exec", {
         method: 'POST',
         body: JSON.stringify(formData)
     }).then(response => response.text())
